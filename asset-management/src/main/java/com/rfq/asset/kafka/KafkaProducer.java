@@ -1,6 +1,5 @@
 package com.rfq.asset.kafka;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
@@ -8,9 +7,6 @@ import java.util.Map;
 
 @Service
 public class KafkaProducer {
-
-    @Value("${spring.kafka.enable}")
-    private boolean kafkaEnabled;
 
     private final Map<String, KafkaTemplate<String, String>> kafkaTemplateMap;
 

@@ -23,8 +23,8 @@ public class AssetManagementRest {
     }
 
     @GetMapping("/ping")
-    public String sayHello() {
-        return "Hello";
+    public String healthCheck() {
+        return "200 Ok";
     }
 
     @PostMapping("/echo")
