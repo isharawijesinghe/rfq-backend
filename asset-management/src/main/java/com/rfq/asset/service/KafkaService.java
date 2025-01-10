@@ -13,6 +13,6 @@ public class KafkaService {
     }
 
     public void sendMessage(String message){
-        kafkaProducer.sendMessage("my-topic", message);
+        kafkaProducer.sendMessage("producer1", "my-topic", message);
     }
 }

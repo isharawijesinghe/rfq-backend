@@ -28,7 +28,7 @@ public class AssetManagementRest {
     }
 
     @PostMapping("/echo")
-    public String sendEchoRequest(AssetManagementRequest assetManagementRequest){
+    public String sendEchoRequest(@RequestBody AssetManagementRequest assetManagementRequest){
         EnclaveServiceRequest<AssetManagementRequest> request = new EnclaveServiceRequest<>();
         request.setData(assetManagementRequest);
         request.setAction(Actions.ECHO.name());
