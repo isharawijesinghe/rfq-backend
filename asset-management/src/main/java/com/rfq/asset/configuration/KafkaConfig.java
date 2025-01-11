@@ -61,7 +61,6 @@ public class KafkaConfig {
         return new KafkaTemplate<>(producerFactory());
     }
 
-    // Consumer Configuration
     @Bean
     @ConditionalOnProperty(name = "spring.kafka.enable", havingValue = "true", matchIfMissing = true)
     public ConsumerFactory<String, Object> consumerFactory() {

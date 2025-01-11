@@ -10,7 +10,6 @@ public class KafkaService {
 
     private final Logger logger = LogManager.getLogger(KafkaService.class);
 
-
     private final KafkaProducer kafkaProducer;
 
     public KafkaService(KafkaProducer kafkaProducer){
